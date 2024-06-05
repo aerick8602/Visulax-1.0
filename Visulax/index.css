@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.5s ease;
+    background-color: #1f1c1cef;
+
+}
+
+#particles-js {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-color: transparent;
+}
+
+/* Navbar */
+.navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    height: 9vh;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    box-shadow:
+        0px 2px 3px #3ab1ad,
+        -1px -2px 3px #3ab1ad;
+    z-index: 5;
+
+}
+
+.right-nav {
+    margin: 0;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sign {
+    display: flex;
+    color: #00FFFF;
+    flex-direction: col;
+    justify-content: center;
+    background-color: white;
+}
+
+.logo {
+    padding: 0;
+    height: 160%;
+    margin: -5% 10%;
+}
+
+.Git {
+    padding: 0;
+    width: auto;
+    height: 100%;
+    margin-right: 10px;
+
+}
+
+.signIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #000000;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: #00FFFF;
+    border: 3px solid #000000;
+    font-family: 'Inconsolata', monospace;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+.sign:hover {
+    color: #00FFFF;
+    border-color: #000000;
+    background-color: #000000;
+}
+
+/* Wrapper */
+.wrapper-link {
+    font-size: 20px;
+    color: #00FFFF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: #000000;
+    border: 3px solid #000000;
+    font-family: 'Inconsolata', monospace;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+.wrapper-link:hover {
+    color: black;
+    border-color: #000000;
+    background-color: #00FFFF;
+}
+
+
+.back {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.backlogo {
+    margin-top: 5%;
+    width: 40%;
+    height: auto;
+}
+
+.wrapper {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-container {
+    margin: 0;
+    gap: 2%;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.project-box {
+
+    margin: 1.68%;
+    background-color: #00FFFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 210px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px #15b0a3c5, -2px -3px 4px #15b0a3c5;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.project-box .wrapper-link {
+    margin-bottom: 10px;
+
+}
+
+.sorting-labels {
+    font-family: 'Inconsolata', monospace;
+    ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 7px;
+
+}
+
+.sorting-label {
+    font-family: 'Inconsolata', monospace;
+    text-decoration: underline
+}
+
+.project-box label {
+    font-size: 15px;
+    color: #8f8787;
+    white-space: nowrap;
+
+}
+
+
+
+.project-box:hover.project-box h3,
+.project-box:hover.project-box>label {
+    position: relative;
+    color: black;
+    z-index: 2;
+}
+
+.project-box:hover.project-box>div>label {
+    position: relative;
+    color: black;
+    z-index: 2;
+}
+
+
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+/* Footer */
+.footer {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #00FFFF;
+    background-color: rgb(0, 0, 0);
+    height: 33%;
+    width: 100%;
+    box-shadow:
+        -1px -2px 3px #3ab1ad,
+        0px 2px 3px #3ab1ad;
+    text-align: center;
+}
+
+.Subcribe {
+    border-radius: 5px;
+    background-color: #000000;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+}
+
+.email {
+    border-radius: 5px;
+    background-color: #000000ef;
+    border: 2px solid #00FFFF;
+    color: #00FFFF;
+}
+
+.Subcribe:hover {
+    background-color: #00FFFF;
+    color: black;
+}
+
+.section {
+    margin-bottom: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+}
+
+.Intro {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #00FFFF;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+}
+
+.Intro>p {
+    margin: 0;
+    padding: 0;
+}
+
+.Intro :first-child {
+    margin-top: 10px;
+}
+
+.Language>p {
+    margin: 5px 0px 0px 0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: large;
+    font-weight: 800;
+    font-stretch: extra-expanded;
+
+}
+
+.icon {
+    margin: 0;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.icon>img {
+    width: 2%;
+    padding: 3px;
+}
+
+.footer-section>p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: small;
+    gap: 0;
+}
+
+.footer-middle {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.Follow>a {
+    color: #00FFFF;
+    font-family: 'Inconsolata', monospace;
+}
+
+.btn {
+    align-items: center;
+    background-color: #00FFFF;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 15px;
+    justify-content: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    font-family: 'Inconsolata', monospace;
+}
+
+.btn:hover.btn {
+    position: relative;
+    color: #00FFFF;
+
+    background-color: #1f1a1a;
+    border: 1px solid #00FFFF;
+    z-index: 1;
+}
+
+
+.btn:active,
+.btn:hover {
+    outline: 0;
+}
+
+.fa {
+    color: inherit;
+    display: flex;
+    gap: 25px;
+}
+
+.fa>a {
+    color: #00FFFF;
+    font-size: x-large;
+}
+
+.footer-section .fa a {
+    text-decoration: none;
+}

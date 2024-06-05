@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+/* General body styles */
+body {
+    background-color: #1f1c1cef;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+/* Navbar */
+.navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    height: 9vh;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    box-shadow:
+        0px 2px 3px #3ab1ad,
+        -1px -2px 3px #3ab1ad;
+    z-index: 5;
+
+}
+
+.right-nav {
+    margin: 0;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sign {
+    display: flex;
+    color: #00FFFF;
+    flex-direction: col;
+    justify-content: center;
+    background-color: white;
+}
+
+.logo {
+    padding: 0;
+    height: 160%;
+    margin: -5% 10%;
+}
+
+.Git {
+    padding: 0;
+    width: auto;
+    height: 100%;
+    margin-right: 10px;
+
+}
+
+.signIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #000000;
+    padding: 10px 20px;
+    font-weight: bolder;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: #00FFFF;
+    border: 3px solid #000000;
+    font-family: 'Inconsolata', monospace;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+.sign:hover {
+    color: #00FFFF;
+    border-color: #000000;
+    background-color: #000000;
+}
+
+/* Binary tree title styles */
+.binary-Tree {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 50px;
+    color: #00FFFF;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* General form group styles */
+.form-group h6,
+.textarea,
+canvas {
+    margin: 10px;
+}
+
+
+/* Text center alignment */
+.text-center {
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+}
+
+
+/* Array input section styles */
+.array {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    gap: 10px;
+}
+
+/* Form group container styles */
+.form-group {
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+    color: #00FFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Button styles */
+.btn {
+    align-items: center;
+    background-color: #00FFFF;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: .8em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 5px 10px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: 'Inconsolata', monospace;
+    font-size: large;
+    padding: 5px;
+    height: 35px;
+    margin: 10px;
+
+}
+
+.btn:hover.btn {
+    position: relative;
+    color: #00FFFF;
+
+    background-color: #1f1a1a;
+    border: 1px solid #00FFFF;
+    z-index: 2;
+}
+
+/* Button active and hover states */
+.btn:active,
+.btn:hover {
+    outline: 0;
+}
+
+
+
+.binary-Tree {
+    font-family: 'Inconsolata', monospace;
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+#treeCanvas {
+    display: fixed;
+    margin: 10px 0px 15px 0px;
+    padding: 0;
+    /* margin-top: 10px;
+    margin-bottom: 15px; */
+    width: 1300px;
+    /* Fixed width */
+    height: 445px;
+    /* Fixed height */
+    border: 2px solid #00FFFF;
+    border-radius: 15px;
+    overflow-x: slide;
+    /* Add horizontal scrollbar when content exceeds width */
+    white-space: nowrap;
+    /* Prevent wrapping of canvas content */
+}
+
+
+/* Footer styles */
+.footer {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #00FFFF;
+    background-color: rgb(0, 0, 0);
+    height: 15%;
+    width: 100%;
+    box-shadow:
+        -1px -2px 3px #3ab1ad,
+        0px 2px 3px #3ab1ad;
+    text-align: center;
+}
+
+.Intro {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #00FFFF;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+}
+
+.Intro>p {
+    margin: 0;
+    padding: 0;
+}
+
+.Intro :first-child {
+    margin-top: 10px;
+}
+
+.footer-section>p {
+    font-size: small;
+    font-stretch: extra-expanded;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    gap: 0;
+}
+
+
+
+.btn:hover.btn {
+    position: relative;
+    color: #00FFFF;
+
+    background-color: #1f1a1a;
+    border: 1px solid #00FFFF;
+    z-index: 1;
+}
+
+
+.btn:active,
+.btn:hover {
+    outline: 0;
+}
+
+.fa {
+    color: inherit;
+    display: flex;
+    gap: 25px;
+}
+
+.fa>a {
+    color: #00FFFF;
+    font-size: x-large;
+}
+
+.footer-section .fa a {
+    text-decoration: none;
+}
+
+/* Basic styling for the input field */
+#txt {
+    font-size: 16px;
+    /* Adjust the font size */
+
+    padding: 5px;
+    /* Add some padding for better readability */
+    width: 100%;
+    /* Make the input take full width of its container */
+    max-width: 1000px;
+    /* Set a maximum width */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
+    border: 2px solid #00FFFF;
+    /* Add a border with a custom color */
+    border-radius: 4px;
+    /* Slightly round the corners */
+    background-color: #333;
+    /* Set a background color */
+    color: #00FFFF;
+    /* Set the text color */
+    /* Add some margin */
+    height: 35px;
+    margin: 10px;
+}
+
+/* Style for the placeholder text */
+#txt::placeholder {
+    color: #888;
+    /* Placeholder text color */
+    opacity: 1;
+    /* Ensure full opacity */
+}
+
+/* Add focus effect */
+#txt:focus {
+    outline: none;
+    /* Remove default outline */
+    border-color: #40ffa0;
+    /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(64, 255, 160, 0.5);
+    /* Add a glow effect */
+}
+
+/* Optional: styling for the input field container if needed */
+.form-control {
+    display: flex;
+    justify-content: center;
+    /* Center the input field */
+    align-items: center;
+    /* Center align vertically */
+}
+
+.toggle-button {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    width: 100%;
+    background-color: #00FFFF;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+/* Container for the content */
+.content-container {
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    border-radius: 5px;
+}
+
+/* Content within the container */
+.content {
+    margin: 0;
+}
+
+/* When the container is active, set max-height to a large enough value to show content */
+.content-container.active {
+    max-height: 220px;
+    /* Adjust based on content height */
+}
+
+.code-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.complexity {
+    border: 1px solid balck;
+    width: 24%;
+    margin: 0;
+    padding: 0;
+}
+
+.complexity>p {
+    font-size: large;
+    font-family: 'Inconsolata', monospace;
+    color: #3FB5DF;
+    font-weight: 600;
+}
+
+.program {
+    width: 60%;
+}
+
+.code,
+.pre {
+    font-size: small;
+    font-family: 'Inconsolata', monospace;
+}
+
+.program {
+    color: #3FB5DF;
+}
