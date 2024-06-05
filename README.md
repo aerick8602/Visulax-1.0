@@ -2,7 +2,7 @@
 
 Welcome to Visulax - an immersive platform for Algorithm Visualization!
 
-# Visit: https://visulax-ayushs-projects-a05c9991.vercel.app/
+## Visit: https://visulax-ayushs-projects-a05c9991.vercel.app/
 
 ## Description
 
