@@ -141,8 +141,8 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 321px;
-    height: 215px;
+    width: 295px;
+    height: 205px;
     border-radius: 20px;
     box-shadow: 2px 3px 4px #15b0a3c5, -2px -3px 4px #15b0a3c5;
     text-align: center;
@@ -290,13 +290,13 @@ p {
 }
 
 .Support>form>input {
-    font-size:17.5px;
+    font-size:15px;
     width: 60%;
     border-radius: 5px;
 }
 
 .Support>form>button {
-    font-size: 17.5px;
+    font-size: 15px;
     width: 30%;
     background-color: #00FFFF;
     color: black;
