@@ -32,10 +32,11 @@ body {
 }
 
 .container {
-    background-color: #00FFFF;
-    /* border-radius: 30px; */
+    display: flex;
+    background-color: transparent;
     position: relative;
-    overflow: hidden;
+    flex-direction: row;
+    overflow: visible;
     width: 768px;
     max-width: 100%;
     min-height: 480px;
@@ -45,12 +46,14 @@ body {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
+
 
 .container span {
     font-size: 12px;
 }
+
 
 .container a {
     color: #333;
@@ -73,13 +76,14 @@ body {
     cursor: pointer;
 }
 
+
 .container button.hidden {
     background-color: transparent;
     border-color: #00FFFF;
 }
 
 .container form {
-    background-color: #00FFFF;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,17 +103,20 @@ body {
     border: .2px;
 }
 
+
 .form-container {
-    position: absolute;
+    position: relative;
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
 }
 
 .sign-in {
+    display: none;
     left: 0;
     width: 50%;
-    z-index: 2;
+    opacity: 1;
+
 }
 
 .container.active .sign-in {
@@ -117,10 +124,11 @@ body {
 }
 
 .sign-up {
+    background-color: #00FFFF;
     left: 0;
     width: 50%;
-    opacity: 0;
-    z-index: 1;
+    opacity: 1;
+
 }
 
 .container.active .sign-up {
@@ -150,6 +158,7 @@ body {
 }
 
 .social-icons a {
+    color: #000000;
     border: 1px solid #00FFFF;
     border-radius: 20%;
     border: 1px solid black;
@@ -161,6 +170,7 @@ body {
     height: 40px;
 }
 
+
 .toggle-container {
     position: absolute;
     top: 0;
@@ -169,17 +179,17 @@ body {
     height: 100%;
     overflow: hidden;
     transition: all 0.6s ease-in-out;
-    /* border-radius: 150px 0 0 100px; */
+    border-radius: 150px 0 0 100px;
     z-index: 1000;
 }
 
 .container.active .toggle-container {
     transform: translateX(-100%);
-    /* border-radius: 0 150px 100px 0; */
+    border-radius: 0 150px 100px 0;
 }
 
 .toggle {
-    background-color: #000000;
+    background-color: transparent;
     height: 100%;
     color: #00FFFF;
     position: relative;
