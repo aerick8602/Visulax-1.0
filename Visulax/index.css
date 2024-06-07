@@ -141,8 +141,8 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 298px;
-    height: 200px;
+    width: 321px;
+    height: 215px;
     border-radius: 20px;
     box-shadow: 2px 3px 4px #15b0a3c5, -2px -3px 4px #15b0a3c5;
     text-align: center;
@@ -150,7 +150,7 @@ nav {
 }
 
 .algorithms {
-    height: 20%;
+    height: 27%;
     padding: 2px 4px 2px 4px;
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +164,7 @@ nav {
 
 .box>div>label {
     padding: 2px 5px 4px 5px;
-    font-size: 14px;
+    font-size: 16.5px;
     color: #8f8787;
     white-space: nowrap;
 
@@ -225,10 +225,11 @@ footer {
 }
 
 h3 {
+    font-weight:600;
     margin: 3px;
     color: #00FFFF;
     font-family: 'Inconsolata', monospace;
-    font-size: medium;
+    font-size: large;
     text-align: center;
 }
 
@@ -236,7 +237,7 @@ p {
     margin: 1px;
     color: #00FFFF;
     font-family: 'Inconsolata', monospace;
-    font-size: small;
+    font-size: medium;
     text-align: center;
 }
 
@@ -255,7 +256,7 @@ p {
 }
 
 .icon>img {
-    width: 8%;
+    width: 10%;
     padding: 3px;
 }
 
@@ -279,7 +280,7 @@ p {
 
 .fa>a {
     color: #00FFFF;
-    font-size: 120%;
+    font-size: 28px;
     text-decoration: none;
 }
 
@@ -289,12 +290,13 @@ p {
 }
 
 .Support>form>input {
+    font-size:17.5px;
     width: 60%;
     border-radius: 5px;
 }
 
 .Support>form>button {
-    font-size: 80%;
+    font-size: 17.5px;
     width: 30%;
     background-color: #00FFFF;
     color: black;
