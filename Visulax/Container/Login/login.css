@@ -32,11 +32,10 @@ body {
 }
 
 .container {
-    display: flex;
     background-color: transparent;
+    /* border-radius: 30px; */
     position: relative;
-    flex-direction: row;
-    overflow: visible;
+    overflow: hidden;
     width: 768px;
     max-width: 100%;
     min-height: 480px;
@@ -46,14 +45,12 @@ body {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
-
 
 .container span {
     font-size: 12px;
 }
-
 
 .container a {
     color: #333;
@@ -76,14 +73,13 @@ body {
     cursor: pointer;
 }
 
-
 .container button.hidden {
     background-color: transparent;
     border-color: #00FFFF;
 }
 
 .container form {
-    background-color: transparent;
+    background-color: #00FFFF;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,20 +99,17 @@ body {
     border: .2px;
 }
 
-
 .form-container {
-    position: relative;
+    position: absolute;
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
 }
 
 .sign-in {
-    display: none;
     left: 0;
     width: 50%;
-    opacity: 1;
-
+    z-index: 2;
 }
 
 .container.active .sign-in {
@@ -124,11 +117,10 @@ body {
 }
 
 .sign-up {
-    background-color: #00FFFF;
     left: 0;
     width: 50%;
-    opacity: 1;
-
+    opacity: 0;
+    z-index: 1;
 }
 
 .container.active .sign-up {
@@ -158,7 +150,6 @@ body {
 }
 
 .social-icons a {
-    color: #000000;
     border: 1px solid #00FFFF;
     border-radius: 20%;
     border: 1px solid black;
@@ -170,7 +161,6 @@ body {
     height: 40px;
 }
 
-
 .toggle-container {
     position: absolute;
     top: 0;
@@ -179,13 +169,13 @@ body {
     height: 100%;
     overflow: hidden;
     transition: all 0.6s ease-in-out;
-    border-radius: 150px 0 0 100px;
+    /* border-radius: 150px 0 0 100px; */
     z-index: 1000;
 }
 
 .container.active .toggle-container {
     transform: translateX(-100%);
-    border-radius: 0 150px 100px 0;
+    /* border-radius: 0 150px 100px 0; */
 }
 
 .toggle {
@@ -238,4 +228,48 @@ body {
 
 .container.active .toggle-right {
     transform: translateX(200%);
+}
+
+@media(max-width:750px) {
+    .container h1 {
+        width: 200px;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .social-icons {
+        display: flex;
+    }
+
+    .form-container>form>span,
+    .form-container>form>input,
+    .form-container>form>button {
+        width: 160px;
+        text-align: center;
+        font-size: x-small;
+    }
+
+    .form-container>form>a {
+        width: 200px;
+        text-align: center;
+        font-size: small;
+    }
+
+    .toggle>div>button {
+        width: 160px;
+        text-align: center;
+        font-size: x-small;
+        margin-top: 64px;
+    }
+
+    .toggle-panel>p {
+        width: 150px;
+        font-size: small;
+    }
+
+    .sign-up>form>input {
+        height: 25px;
+
+    }
+
 }
