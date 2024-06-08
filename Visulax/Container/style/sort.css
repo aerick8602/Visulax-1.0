@@ -99,7 +99,7 @@ footer {
     margin: 0;
     padding: 0;
     background-color: #000000;
-    position: relative;
+    position: fixed;
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -346,7 +346,7 @@ div ul [active="true"] {
     margin: 0.1%;
     transition: 0.1s;
     width: 2%;
-    max-height: 370px;
+    max-height: 385px;
     opacity: 0.8;
     border-radius: 100px;
     color: #00FFFF !important;
@@ -366,7 +366,7 @@ div ul [active="true"] {
     justify-content: center;
     display: flex;
     align-items: flex-end;
-    height: 465px;
+    height: 500px;
     /* Set a fixed height */
     overflow-y: auto;
     /* Enable scrolling if content overflows */
