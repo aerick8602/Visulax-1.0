@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+/* General body styles */
+body {
+    background-color: #1f1c1cef;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Navbar */
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    box-shadow: 0px 2px 3px #3ab1ad, -1px -2px 3px #3ab1ad;
+    z-index: 1;
+}
+
+.left-nav {
+    margin: 0;
+    padding: 0% 2% 0% 2%;
+    width: 15%;
+}
+
+.right-nav {
+    margin: 0;
+    width: 15%;
+    padding: 0% 2% 0% 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    padding-top: 2%;
+    width: 100%;
+}
+
+.SignIn {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.SignIn>a {
+    color: black;
+    background-color: #00FFFF;
+    text-decoration: none;
+    margin-top: 5%;
+    padding: 10%;
+    border-radius: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.SignIn>a:hover {
+    color: #00FFFF;
+    background-color: #000000;
+    border: 2px solid #00FFFF;
+}
+
+.github {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.github>img {
+    width: 50px;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    box-shadow: 0px 2px 3px #3ab1ad, -1px -2px 3px #3ab1ad;
+    z-index: 1;
+}
+
+h3 {
+    margin: 3px;
+    color: #00FFFF;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+    text-align: center;
+}
+
+p {
+    margin: 1px;
+    color: #00FFFF;
+    font-family: 'Inconsolata', monospace;
+    font-size: small;
+    text-align: center;
+}
+
+.Language>p {
+    margin: 5px 0px 0px 0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: large;
+    font-weight: 800;
+    font-stretch: extra-expanded;
+}
+
+.icon {
+    margin: 0% 40% 0% 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon>img {
+    width: 8%;
+    padding: 3px;
+}
+
+.footer-middle {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.footer-middle>div {
+    width: 20%;
+}
+
+.fa {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    gap: 5%;
+}
+
+.fa>a {
+    color: #00FFFF;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+.Support {
+    display: flex;
+    flex-direction: column;
+}
+
+.Support>form>input {
+    width: 60%;
+    border-radius: 5px;
+}
+
+.Support>form>button {
+    font-size: 80%;
+    width: 30%;
+    background-color: #00FFFF;
+    color: black;
+    border-radius: 5px;
+}
+
+.Support>form>button:hover {
+    color: #00FFFF;
+    background-color: #000000;
+    border: 2px solid #00FFFF;
+}
+
+/* SOE */
+.main-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.information {
+    margin-top: 3.5%;
+    padding: 10px;
+    display: flex;
+    color: #00FFFF;
+    flex-direction: column;
+    align-items: center;
+}
+
+.defination {
+    text-align: center;
+    padding: 10px 40px 5px 40px;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 3.5%;
+    bottom: 1%;
+}
+
+.val {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+#myInput {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#myButton {
+    padding: 5px 20px;
+    background-color: #00FFFF;
+    /* Green */
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid #000000;
+}
+
+#myButton:hover {
+    background-color: #000000;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+
+
+}
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .logo {
+        width: 140%;
+    }
+}
+
+@media (max-width: 1150px) {
+
+    .left-nav {
+        width: 60%;
+    }
+
+    .right-nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .SignIn>a {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 760px) {
+    .left-nav {
+        width: 60%;
+    }
+
+    .right-nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .SignIn>a {
+        font-size: medium;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .fa {
+        gap: 5%;
+    }
+
+    .fa>a {
+        font-size: xx-larger;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .footer-middle {
+        height: 35px;
+    }
+
+    .fa>a {
+        font-size: large;
+    }
+
+    .footer-middle>div {
+        width: 30%;
+
+    }
+
+    .footer-middle {
+
+        margin: 0%;
+        margin-bottom: 2%;
+    }
+
+    .Support>form {
+
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Support>form>input {
+        margin: 0% 6% 0% 0%;
+        width: 50%;
+        font-size: 13px;
+    }
+
+    .Support>form>button {
+        width: 40%;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:395px) {
+
+    .left-nav {
+        width: 100%;
+    }
+
+    .logo {
+        margin-top: 1.45%;
+        width: 68%;
+    }
+
+    .right-nav {
+        width: 60%;
+        padding: 0%;
+    }
+
+    .SignIn>a {
+        font-size: small;
+    }
+
+    .defination {
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+        margin-top: 40px;
+
+    }
+
+    #myCanvas {
+        margin-bottom: 50px;
+        margin-left: 10px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+
+    .footer-middle>div {
+        width: 30%;
+
+    }
+
+    .footer-middle {
+
+        margin: 0%;
+        margin-bottom: 2%;
+    }
+
+
+    .fa>a {
+        font-size: large;
+    }
+
+    .Support>form {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Support>form>input {
+        margin: 0% 6% 0% 0%;
+        width: 50%;
+        font-size: 8px;
+    }
+
+    .Support>form>button {
+        width: 40%;
+        font-size: 8px;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 11px;
+        padding: 0%;
+        margin-bottom: 2px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+}

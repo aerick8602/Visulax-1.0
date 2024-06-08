@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../../../images/favicon.png" type="image/x-icon">
+    <title>Sorting</title>
+    <link rel="stylesheet" href="../../style/sort.css">
+    <script src="https://d3js.org/d3.v5.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="left-nav">
+            <img class="logo" src="../../../images/main-logo.png" alt="">
+        </div>
+        <div class="right-nav">
+            <div class="SignIn">
+                <a href="../../Login/login.html" onclick="handleLinkClick(event)">SignIn</a>
+            </div>
+            <a class="github" href="https://github.com/aerick8602" target="_blank" class="github-corner"
+                aria-label="View source on GitHub">
+                <img class="gitsvg" src="../../../images/git.svg" alt="">
+            </a>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <div id="sidebar">
+            <div class="algos">SORTING ALGORITHMS</div>
+            <div class="list-unstyled components">
+                <ul class="list-unstyled collapse show" id="algorithmSubmenu"></ul>
+                <form>
+                    <label for="delayRange" class="form-label">Delay:</label>
+                    <label for="delayRange" class="form-label range-value" id="delayRangeValue"></label>
+                    <input type="range" class="form-range" min="0" max="1000" id="delayRange">
+                </form>
+                <form>
+                    <label for="arraySizeRange" class="form-label">Array size:</label>
+                    <label for="arraySizeRange" class="form-label range-value" id="arraySizeRangeValue"></label>
+                    <input type="range" class="form-range" min="1" max="45" id="arraySizeRange">
+                </form>
+            </div>
+            <div class="list-unstyled CTAs">
+                <p>
+                    <a href="#" class="start">Start</a>
+                </p>
+                <p>
+                    <a href="#" class="shuffle">Shuffle</a>
+                </p>
+                <p>
+                    <a href="#" class="download" id="source-code">Algorithm_code</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="meta-content">
+            <div class="table">
+                <div class="complex">Time & Space Complexity</div>
+                <div class="header">
+                    <div class="hcell">Best</div>
+                    <div class="hcell">Average</div>
+                    <div class="hcell">Worst</div>
+                    <div class="hcell">Memory</div>
+                    <div class="hcell">Stable</div>
+                </div>
+
+                <div class="row">
+                    <div class="cell" id="Best">blank</div>
+                    <div class="cell" id="Average">blank</div>
+                    <div class="cell" id="Worst">blank</div>
+                    <div class="cell" id="Memory">blank</div>
+                    <div class="cell" id="Stable">blank</div>
+                </div>
+            </div>
+            <!-- Page Content  -->
+            <div class="chartHTML" id="content"></div>
+        </div>
+
+
+    </div>
+    <footer id="footer">
+        <h3>
+            Welcome to Algorithm Visualizer, an immersive platform that transforms algorithms into vivid,
+            interactive visualizations.
+        </h3>
+        <div class="footer-middle">
+            <div class="Contact">
+                <h3>Contact Us</h3>
+                <p>Phone:(+91) 456-7890</p>
+                <p>Email:visulax@gmail.com</p>
+            </div>
+            <div class="Follow">
+                <h3>Follow Us</h3>
+                <div class="fa">
+                    <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://Whastapp.com" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="Support">
+                <h3>Support Us</h3>
+                <form action="/support" method="post">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button onclick="support()" class="Subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <p>Developed by <b>Ayush Katiyar's</b> insight, ChatGPT's verbal might - forging ahead in digital flight!😁✨
+        </p>
+        <br>
+    </footer>
+    <script type="module" src="Js/sort.js"></script>
+</body>
+
+</html>

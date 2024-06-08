@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+    background-color: #1f1c1cef;
+}
+
+#particles-js {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-color: transparent;
+}
+
+/* Navbar */
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    box-shadow: 0px 2px 3px #3ab1ad, -1px -2px 3px #3ab1ad;
+    z-index: 1;
+}
+
+.left-nav {
+    margin: 0;
+    padding: 0% 2% 0% 2%;
+    width: 15%;
+}
+
+.right-nav {
+    margin: 0;
+    width: 15%;
+    padding: 0% 2% 0% 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    padding-top: 2%;
+    width: 100%;
+}
+
+.SignIn {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.SignIn>a {
+    color: black;
+    background-color: #00FFFF;
+    text-decoration: none;
+    margin-top: 5%;
+    padding: 10%;
+    border-radius: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.SignIn>a:hover {
+    color: #00FFFF;
+    background-color: #000000;
+    border: 2px solid #00FFFF;
+}
+
+.github {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.github>img {
+    width: 50px;
+}
+
+/* Wallpaper */
+.wallpaper {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.wallpaper>img {
+    width: 40%;
+    height: auto;
+}
+
+/* Wrappers */
+.wrappers {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.Components {
+    font-size: 20px;
+    color: #00FFFF;
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: #000000;
+    border: 3px solid #000000;
+    font-family: 'Inconsolata', monospace;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.Components:hover {
+    color: black;
+    border-color: #000000;
+    background-color: #00FFFF;
+}
+
+.box {
+    margin: 2%;
+    background-color: #00FFFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: 210px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 4px #15b0a3c5, -2px -3px 4px #15b0a3c5;
+    text-align: center;
+
+}
+
+.algorithms {
+    height: 20%;
+    padding: 2px 4px 2px 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 7px;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: 1px underline
+}
+
+
+
+.box>div>label {
+    padding: 2px 5px 4px 5px;
+    font-size: 13px;
+    color: #8f8787;
+    white-space: nowrap;
+
+}
+
+.box:hover.box>div>label {
+    position: relative;
+    color: black;
+}
+
+
+
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    box-shadow: 0px 2px 3px #3ab1ad, -1px -2px 3px #3ab1ad;
+    z-index: 1;
+}
+
+h3 {
+    margin: 3px;
+    color: #00FFFF;
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+    text-align: center;
+}
+
+p {
+    margin: 1px;
+    color: #00FFFF;
+    font-family: 'Inconsolata', monospace;
+    font-size: small;
+    text-align: center;
+}
+
+.Language>p {
+    margin: 5px 0px 0px 0px;
+    font-family: 'Inconsolata', monospace;
+    font-size: large;
+    font-weight: 800;
+    font-stretch: extra-expanded;
+}
+
+.icon {
+    margin: 0% 40% 0% 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon>img {
+    width: 8%;
+    padding: 3px;
+}
+
+.footer-middle {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.footer-middle>div {
+    width: 20%;
+}
+
+.fa {
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.fa>a {
+    color: #00FFFF;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+.Support {
+    display: flex;
+    flex-direction: column;
+}
+
+.Support>form>input {
+    width: 60%;
+    border-radius: 5px;
+}
+
+.Support>form>button {
+    font-size: 80%;
+    width: 30%;
+    background-color: #00FFFF;
+    color: black;
+    border-radius: 5px;
+}
+
+.Support>form>button:hover {
+    color: #00FFFF;
+    background-color: #000000;
+    border: 2px solid #00FFFF;
+}
+
+/* Media Queries */
+
+@media (max-width: 1360px) {
+
+
+    .wrappers {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+
+
+    .logo {
+        width: 140%;
+    }
+}
+
+@media (max-width: 1150px) {
+
+
+    .left-nav {
+        width: 60%;
+    }
+
+    .right-nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .SignIn>a {
+        font-size: medium;
+    }
+
+    .wallpaper {
+        margin-top: 8%;
+    }
+
+    .wallpaper>img {
+        width: 50%;
+    }
+
+    .wrappers {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box {
+        width: 250px;
+        height: 200px;
+    }
+
+    .Components {
+        font-size: 15px;
+        padding: 2px 6px 2px 6px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 760px) {
+    .left-nav {
+        width: 60%;
+    }
+
+    .right-nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .SignIn>a {
+        font-size: medium;
+    }
+
+    .wallpaper {
+        margin-top: 10%;
+    }
+
+    .box {
+        width: 190px;
+        height: 160px;
+        margin: 18px;
+
+    }
+
+    .box>a {
+        font-size: 16px;
+        padding: 1px 4px 1px 4px;
+        font-weight: 800;
+
+    }
+
+    .algorithms {
+        height: 10px;
+    }
+
+    .box>div>label {
+        padding: .05px 1px .05px 1px;
+        font-size: 12px;
+        color: #484242;
+        white-space: nowrap;
+
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .icon {
+        margin: 0% 30% 0% 30%;
+    }
+
+
+
+    .fa {
+        gap: 5%;
+    }
+
+    .fa>a {
+        font-size: xx-larger;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .footer-middle {
+        height: 35px;
+    }
+
+    .fa>a {
+        font-size: large;
+    }
+
+    .footer-middle>div {
+        width: 30%;
+
+    }
+
+    .footer-middle {
+
+        margin: 0%;
+        margin-bottom: 2%;
+    }
+
+    .Support>form {
+
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Support>form>input {
+        margin: 0% 6% 0% 0%;
+        width: 50%;
+        font-size: 13px;
+    }
+
+    .Support>form>button {
+        width: 40%;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:395px) {
+
+    .left-nav {
+        width: 100%;
+    }
+
+    .logo {
+        margin-top: 1.45%;
+        width: 68%;
+    }
+
+    .right-nav {
+        width: 60%;
+        padding: 0%;
+    }
+
+    .SignIn>a {
+        font-size: small;
+    }
+
+    .wallpaper {
+        margin-top: 14%;
+    }
+
+    .wallpaper>img {
+        width: 100%;
+    }
+
+    .wrappers {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box {
+        width: 150px;
+        height: 130px;
+        margin: 18px;
+
+    }
+
+    .box>a {
+        font-size: 12.8px;
+        padding: 1px 4px 1px 4px;
+        font-weight: 800;
+
+    }
+
+    .algorithms {
+        height: 10px;
+    }
+
+    .box>div>label {
+        padding: .05px 1px .05px 1px;
+        font-size: 10px;
+        color: #484242;
+        white-space: nowrap;
+
+    }
+
+
+    .footer-middle>div {
+        width: 30%;
+
+    }
+
+    .footer-middle {
+
+        margin: 0%;
+        margin-bottom: 2%;
+    }
+
+    .fa>a {
+        font-size: large;
+    }
+
+    .Support>form {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Support>form>input {
+        margin: 0% 6% 0% 0%;
+        width: 50%;
+        font-size: 8px;
+    }
+
+    .Support>form>button {
+        width: 40%;
+        font-size: 8px;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 12px;
+        padding: 0%;
+        margin: 1% 0% .2% 0%;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+}
