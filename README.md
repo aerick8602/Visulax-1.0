@@ -1,7 +1,7 @@
 # Visulax
 
 Welcome to Visulax - an immersive platform for Algorithm Visualization!
-#### Live: https://visulax.netlify.app
+### Live: https://visulax.netlify.app
 ![Visulax](./Visulax/images/demo/Screenshot%202024-06-16%20093936.png)
 
 ## Description
