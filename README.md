@@ -18,7 +18,7 @@ Visulax transforms complex algorithms into vivid, interactive visualizations, pr
 
 - **Sorting Algorithms:** Bubble Sort, Selection Sort, Heap Sort, Insertion Sort, Merge Sort, Quick Sort.
 - 
-![](./Visulax/images/demo/Screenshot%202024-06-16%20093936.png)
+![](./Visulax/images/demo/Screenshot%202024-06-16%20093210.png)
 
 - **Searching Algorithms:** Linear Search, Binary Search, Jump Search, Exponential Search.
 - 
