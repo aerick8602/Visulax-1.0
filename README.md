@@ -1,7 +1,7 @@
 # Visulax
 
 Welcome to Visulax - an immersive platform for Algorithm Visualization!
-![Visulax](.Visulax/images/demo/Screenshot%202024-06-16%20093936.png)
+![Visulax](../images/demo/Screenshot%202024-06-16%20093936.png)
 
 ## Description
 
