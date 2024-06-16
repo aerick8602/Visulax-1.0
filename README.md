@@ -2,8 +2,6 @@
 
 Welcome to Visulax - an immersive platform for Algorithm Visualization!
 
-Visit: https://visulax-ayushs-projects-a05c9991.vercel.app/
-
 ## Description
 
 Visulax transforms complex algorithms into vivid, interactive visualizations, providing an engaging learning experience. Dive into the dynamic world of Tree, Sorting, Graph algorithms, and more!
@@ -11,7 +9,6 @@ Visulax transforms complex algorithms into vivid, interactive visualizations, pr
 ## Usage
 
 - Navigate through different algorithm visualizations using the links provided on the main page.
-- Click on "Login" to access the admin panel (if available).
 - Explore different sorting, searching, tree, graph, sieve of Eratosthenes, and recursion algorithms.
 - Follow the instructions on each page to see how the algorithms work in real-time.
 
