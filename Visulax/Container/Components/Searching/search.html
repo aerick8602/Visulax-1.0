@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../../../images/favicon.png" type="image/x-icon">
+    <title>Searching</title>
+    <link rel="stylesheet" href="../../style/search.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Viewport for Canvas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="main-container">
+        <nav>
+            <div class="left-nav">
+                <a href="../../../index.html"><img class="logo" src="../../../images/main-logo.png" alt=""></a>
+            </div>
+            <div class="right-nav">
+                <div class="SignIn">
+                    <a href="../../Login/login.html" onclick="handleLinkClick(event)">SignIn</a>
+                </div>
+                <a class="github" href="https://github.com/aerick8602" target="_blank" class="github-corner"
+                    aria-label="View source on GitHub">
+                    <img class="gitsvg" src="../../../images/git.svg" alt="">
+                </a>
+            </div>
+        </nav>
+        <div class="bar">
+            <div class="anchr">
+                <a href="#">
+                    <select name="algo" id="algo" onchange="algoSelected()">
+                        <option value="" disabled selected>
+                            Algorithm
+                        </option>
+                        <option value="linear">
+                            Linear Search
+                        </option>
+                        <option value="jump">
+                            Jump Search
+                        </option>
+
+                        <option value="binary">
+                            Binary Search
+                        </option>
+                        <option value="exponent">
+                            Exponent Search
+                        </option>
+                    </select>
+                </a>
+                <a>
+                    <label for="size">Size </label>
+                    <input id="size" onchange="sizeChange()" type="range" min=22 max=70 step=1 value=30>
+                </a>
+                <a>
+                    <label for="speed">Speed </label>
+                    <input id="speed" onchange="speedChange()" type="range" min=1 max=5 step=1 value=3>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <input type="number" id="searchKey" class="number-input btn-lg btn" placeholder="Find Number" required />
+            <br />
+
+            <button class="btn-success btn-lg btn-shadow btn-hover" id="search">
+                Search
+            </button>
+            <button class="btn-danger btn-lg btn-shadow btn-hover" id="reset">
+                Reset Array
+            </button>
+        </div>
+
+        <br /><br />
+
+        <div class="data-container">
+            <div class="row container">
+            </div>
+        </div>
+
+        <div class="res-container">
+            <h1 class="result"></h1>
+        </div>
+        <footer id="footer">
+            <h3>
+                Welcome to Algorithm Visualizer, an immersive platform that transforms algorithms into vivid,
+                interactive visualizations.
+            </h3>
+            <div class="footer-middle">
+                <div class="Contact">
+                    <h3>Contact Us</h3>
+                    <p>Phone:(+91) 456-7890</p>
+                    <p>Email:visulax@gmail.com</p>
+                </div>
+                <div class="Follow">
+                    <h3>Follow Us</h3>
+                    <div class="fa">
+                        <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://Whastapp.com" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="Support">
+                    <h3>Support Us</h3>
+                    <form action="/support" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button onclick="support()" class="Subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <p>Developed by <b>Ayush Katiyar's</b> insight, ChatGPT's verbal might - forging ahead in digital flight!😁✨
+            </p>
+            <br>
+        </footer>
+        <script type="text/javascript" src="search.js"></script>
+    </div>
+
+</body>
+
+</html>
