@@ -11,7 +11,6 @@ Visulax transforms complex algorithms into vivid, interactive visualizations, pr
 ## Usage
 
 - Navigate through different algorithm visualizations using the links provided on the main page.
-- Click on "Login" to access the admin panel (if available).
 - Explore different sorting, searching, tree, graph, sieve of Eratosthenes, and recursion algorithms.
 - Follow the instructions on each page to see how the algorithms work in real-time.
 
