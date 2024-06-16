@@ -1,8 +1,7 @@
 # Visulax
 
 Welcome to Visulax - an immersive platform for Algorithm Visualization!
-
-Visit: https://visulax-1-1-git-v12-ayushs-projects-a05c9991.vercel.app/
+![Visulax](./images/demo/Screenshot%202024-06-16%20093936.png)
 
 ## Description
 
@@ -18,11 +17,23 @@ Visulax transforms complex algorithms into vivid, interactive visualizations, pr
 ## Features
 
 - **Sorting Algorithms:** Bubble Sort, Selection Sort, Heap Sort, Insertion Sort, Merge Sort, Quick Sort.
+![](./images/demo/Screenshot%202024-06-16%20093210.png)
+
 - **Searching Algorithms:** Linear Search, Binary Search, Jump Search, Exponential Search.
+![](./images/demo/Screenshot%202024-06-16%20093328.png)
+
 - **Tree Algorithms:** Binary Tree.
-- **Graph Algorithms:** Depth First Search (DFS), Breadth First Search (BFS).
+![](./images/demo/Screenshot%202024-06-16%20093538.png)
+
 - **Sieve of Eratosthenes:** Prime Harvesting Algorithm.
+![](./images/demo/Screenshot%202024-06-16%20093131.png)
+
 - **Recursion Algorithms:** N Queen, Rat in a Maze.
+![](./images/demo/Screenshot%202024-06-16%20093358.png)
+
+- **Graph Algorithms:** Depth First Search (DFS), Breadth First Search (BFS).
+
+
 
 
 If you'd like to contribute additional visualizations or features, please feel free to fork the repository and submit a pull request 😁😁.
