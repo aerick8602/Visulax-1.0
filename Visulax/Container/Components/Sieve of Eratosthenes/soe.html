@@ -6,24 +6,24 @@
     <link rel="shortcut icon" href="../../../images/favicon.png" type="image/x-icon">
     <title>Sieve of Eratosthenes</title>
     <link rel="stylesheet" href="../../style/soe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Viewport for Canvas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div class="main-container">
-        <nav class="navbar">
-            <div>
-                <img class="logo" src="../../../images/logo.png" alt="">
+        <nav>
+            <div class="left-nav">
+                <a href="../../../index.html"><img class="logo" src="../../../images/main-logo.png" alt=""></a>
             </div>
             <div class="right-nav">
-                <div class="signIn">
-                    <a class="sign" href="../../Login/login.html" onclick="handleLinkClick(event)">Login</a>
+                <div class="SignIn">
+                    <a href="../../Login/login.html" onclick="handleLinkClick(event)">SignIn</a>
                 </div>
-                <a href="https://github.com/aerick8602" target="_blank" class="github-corner"
+                <a class="github" href="https://github.com/aerick8602" target="_blank" class="github-corner"
                     aria-label="View source on GitHub">
-                    <img class="Git" src="../../../images/git.svg" alt="">
-
+                    <img class="gitsvg" src="../../../images/git.svg" alt="">
                 </a>
             </div>
         </nav>
@@ -40,7 +40,7 @@
         </div>
         <div class="main">
             <div class="val">
-                <input type="text" id="myInput" placeholder="Enter a number">
+                <input type="number" id="myInput" placeholder="Enter a number">
                 <button id="myButton" onclick="checkInput()">Generate</button>
             </div>
             <br>
@@ -48,22 +48,37 @@
                 style="position: relative; background-color: #444; overflow-y: auto; padding-left: 1.2%;"></canvas>
         </div>
 
-        <br><br><br>
-        <footer class="footer">
-            <div class="Intro">
-                <p>
-                    Welcome to Algorithm Visualizer, an immersive platform that transforms algorithms into vivid,
-                    interactive visualizations.
-                </p>
-                <p>
-                    Dive into the dynamic world of Tree, Sorting, and Graph algorithms and see them come to life!
-                </p>
+        <footer id="footer">
+            <h3>
+                Welcome to Algorithm Visualizer, an immersive platform that transforms algorithms into vivid,
+                interactive visualizations.
+            </h3>
+            <div class="footer-middle">
+                <div class="Contact">
+                    <h3>Contact Us</h3>
+                    <p>Phone:(+91) 456-7890</p>
+                    <p>Email:visulax@gmail.com</p>
+                </div>
+                <div class="Follow">
+                    <h3>Follow Us</h3>
+                    <div class="fa">
+                        <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://Whastapp.com" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="Support">
+                    <h3>Support Us</h3>
+                    <form action="/support" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button onclick="support()" class="Subscribe">Subscribe</button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-section">
-                <p>Developed by <b>Ayush Katiyar's</b> insight, ChatGPT's verbal might - forging ahead in digital
-                    flight!😁✨</p>
-                <p>Powered by <b>VISULAX</b></p>
-            </div>
+            <p>Developed by <b>Ayush Katiyar's</b> insight, ChatGPT's verbal might - forging ahead in digital flight!😁✨
+            </p>
+            <br>
         </footer>
         <script type="text/javascript" src="soe.js"></script>
     </div>

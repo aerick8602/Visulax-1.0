@@ -222,3 +222,6 @@ function init() {
 }
 
 
+function support() {
+    alert("Thank u bhai ❤️❤️");
+}

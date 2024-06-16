@@ -61,3 +61,6 @@ function calculateArrayLength() {
     console.log(arrayLength);
 }
 
+function support() {
+    alert("Thank u bhai ❤️❤️");
+}

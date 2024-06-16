@@ -109,9 +109,9 @@ function linearResetArray() {
         let num = randomIntFromInterval(5, 100);
         document.getElementById(i).innerText = num;
         arr.push(num);
-        blocks[i].style.backgroundColor = "#003b46";
-        indexs[i].style.backgroundColor = "#5bc8ac";
-        indexs[i].style.color = "#003b46";
+        blocks[i].style.backgroundColor = "#000000";
+        indexs[i].style.backgroundColor = "#00FFFF";
+        indexs[i].style.color = "#000000";
     }
     result.style.display = "none";
     document.getElementById("searchKey").value = "";
@@ -130,9 +130,9 @@ async function linearSearch() {
         blocks = document.querySelectorAll(".card");
         indexs = document.querySelectorAll(".index");
         for (let i = 0; i < arr.length; i++) {
-            blocks[i].style.backgroundColor = "#5bc8ac";
-            indexs[i].style.backgroundColor = "#003b46";
-            indexs[i].style.color = "#5bc8ac";
+            blocks[i].style.backgroundColor = "#00FFFF";
+            indexs[i].style.backgroundColor = "#000000";
+            indexs[i].style.color = "#00FFFF";
 
             await new Promise((resolve) =>
                 setTimeout(() => {
@@ -142,7 +142,7 @@ async function linearSearch() {
 
             if (arr[i] == searchKey) {
                 result.style.display = "block";
-                result.innerHTML = `Number found at index : ${i}`;
+                result.innerHTML = `NUMBER FOUND AT INDEX : ${i}`;
                 console.log(
                     `${searchKey} Number found at  index ${i} in array `
                 );
@@ -150,13 +150,13 @@ async function linearSearch() {
                 break;
             }
 
-            blocks[i].style.backgroundColor = "#003b46";
-            indexs[i].style.backgroundColor = "#5bc8ac";
-            indexs[i].style.color = "#003b46";
+            blocks[i].style.backgroundColor = "#000000";
+            indexs[i].style.backgroundColor = "#00FFFF";
+            indexs[i].style.color = "#000000";
         }
         if (!found) {
             result.style.display = "block";
-            result.innerHTML = "Number not found ";
+            result.innerHTML = "NUMBER NOT FOUND  ";
         }
         window.scrollBy({
             top: 500,
@@ -185,9 +185,9 @@ async function binarySearch() {
 
         while (left <= right) {
             mid = Math.floor((right + left) / 2);
-            blocks[mid].style.backgroundColor = "#5bc8ac";
-            indexs[mid].style.backgroundColor = "#003b46";
-            indexs[mid].style.color = "#5bc8ac";
+            blocks[mid].style.backgroundColor = "#00FFFF";
+            indexs[mid].style.backgroundColor = "#000000";
+            indexs[mid].style.color = "#00FFFF";
 
             await new Promise((resolve) =>
                 setTimeout(() => {
@@ -197,7 +197,7 @@ async function binarySearch() {
 
             if (arr[mid] == searchKey) {
                 result.style.display = "block";
-                result.innerHTML = `Number found at index : ${mid}`;
+                result.innerHTML = `NUMBER FOUND AT INDEX : ${mid}`;
                 window.scrollBy({
                     top: 600,
                     behavior: "smooth"
@@ -212,14 +212,14 @@ async function binarySearch() {
             } else {
                 left = mid + 1;
             }
-            // blocks[mid].style.backgroundColor = "#003b46";
-            // indexs[mid].style.backgroundColor = "#5bc8ac";
-            // indexs[mid].style.color = "#003b46";
+            // blocks[mid].style.backgroundColor = "#000000";
+            // indexs[mid].style.backgroundColor = "#00FFFF";
+            // indexs[mid].style.color = "#000000";
         }
 
         if (!found) {
             result.style.display = "block";
-            result.innerHTML = "Number not found ";
+            result.innerHTML = "NUMBER NOT FOUND  ";
             window.scrollBy({
                 top: 600,
                 behavior: "smooth"
@@ -246,9 +246,9 @@ async function jumpSearch() {
         while (arr[Math.min(jumpStep, n) - 1] < searchKey) {
             prev = jumpStep;
             if (prev < arr.length) {
-                blocks[prev].style.backgroundColor = "#5bc8ac";
-                indexs[prev].style.backgroundColor = "#003b46";
-                indexs[prev].style.color = "#5bc8ac";
+                blocks[prev].style.backgroundColor = "#00FFFF";
+                indexs[prev].style.backgroundColor = "#000000";
+                indexs[prev].style.color = "#00FFFF";
             }
 
             await new Promise((resolve) =>
@@ -266,9 +266,9 @@ async function jumpSearch() {
 
         while (arr[prev] < searchKey) {
             prev++;
-            blocks[prev].style.backgroundColor = "#5bc8ac";
-            indexs[prev].style.backgroundColor = "#003b46";
-            indexs[prev].style.color = "#5bc8ac";
+            blocks[prev].style.backgroundColor = "#00FFFF";
+            indexs[prev].style.backgroundColor = "#000000";
+            indexs[prev].style.color = "#00FFFF";
 
             await new Promise((resolve) =>
                 setTimeout(() => {
@@ -287,10 +287,10 @@ async function jumpSearch() {
 
         if (found) {
             result.style.display = "block";
-            result.innerHTML = `Number found at index : ${prev}`;
+            result.innerHTML = `NUMBER FOUND AT INDEX : ${prev}`;
         } else {
             result.style.display = "block";
-            result.innerHTML = "Number not found ";
+            result.innerHTML = "NUMBER NOT FOUND  ";
         }
         window.scrollBy({
             top: 600,
@@ -314,9 +314,9 @@ async function exponentSearch() {
         disableButtons();
 
         if (arr[0] == searchKey) {
-            blocks[0].style.backgroundColor = "#5bc8ac";
-            indexs[0].style.backgroundColor = "#003b46";
-            indexs[0].style.color = "#5bc8ac";
+            blocks[0].style.backgroundColor = "#00FFFF";
+            indexs[0].style.backgroundColor = "#000000";
+            indexs[0].style.color = "#00FFFF";
 
             await new Promise((resolve) =>
                 setTimeout(() => {
@@ -326,7 +326,7 @@ async function exponentSearch() {
 
             index = 0;
             result.style.display = "block";
-            result.innerHTML = `Number found at index : ${index}`;
+            result.innerHTML = `NUMBER FOUND AT INDEX : ${index}`;
             found = true;
             return 0;
         }
@@ -338,9 +338,9 @@ async function exponentSearch() {
                 i = i * 2;
 
                 if (i < n && arr[i] <= searchKey) {
-                    blocks[i].style.backgroundColor = "#5bc8ac";
-                    indexs[i].style.backgroundColor = "#003b46";
-                    indexs[i].style.color = "#5bc8ac";
+                    blocks[i].style.backgroundColor = "#00FFFF";
+                    indexs[i].style.backgroundColor = "#000000";
+                    indexs[i].style.color = "#00FFFF";
 
                     await new Promise((resolve) =>
                         setTimeout(() => {
@@ -350,7 +350,7 @@ async function exponentSearch() {
 
                     if (arr[i] === searchKey) {
                         result.style.display = "block";
-                        result.innerHTML = `Number found at index : ${i}`;
+                        result.innerHTML = `NUMBER FOUND AT INDEX : ${i}`;
                         return 0;
                     }
                 }
@@ -369,9 +369,9 @@ async function iterativeBinarySearch(arr, left, right, searchKey) {
     while (left <= right) {
         mid = Math.floor((right + left) / 2);
         if (mid < arr.length) {
-            blocks[mid].style.backgroundColor = "#5bc8ac";
-            indexs[mid].style.backgroundColor = "#003b46";
-            indexs[mid].style.color = "#5bc8ac";
+            blocks[mid].style.backgroundColor = "#00FFFF";
+            indexs[mid].style.backgroundColor = "#000000";
+            indexs[mid].style.color = "#00FFFF";
         }
         await new Promise((resolve) =>
             setTimeout(() => {
@@ -381,7 +381,7 @@ async function iterativeBinarySearch(arr, left, right, searchKey) {
 
         if (arr[mid] == searchKey) {
             result.style.display = "block";
-            result.innerHTML = `Number found at index : ${mid}`;
+            result.innerHTML = `NUMBER FOUND AT INDEX : ${mid}`;
             found = true;
             break;
         } else if (searchKey < arr[mid]) {
@@ -390,16 +390,16 @@ async function iterativeBinarySearch(arr, left, right, searchKey) {
             left = mid + 1;
         }
         if (mid < arr.length) {
-            blocks[mid].style.backgroundColor = "#003b46";
-            indexs[mid].style.backgroundColor = "#5bc8ac";
-            indexs[mid].style.color = "#003b46";
+            blocks[mid].style.backgroundColor = "#000000";
+            indexs[mid].style.backgroundColor = "#00FFFF";
+            indexs[mid].style.color = "#000000";
         }
     }
     console.log(found);
 
     if (!found) {
         result.style.display = "block";
-        result.innerHTML = "Number not found ";
+        result.innerHTML = "NUMBER NOT FOUND  ";
         window.scrollBy({
             top: 500,
             behavior: "smooth"
@@ -435,9 +435,9 @@ function sortResetArray() {
         let num = randomIntFromInterval(5, 100);
         //    document.getElementById(i).innerText = num;
         arr.push(num);
-        blocks[i].style.backgroundColor = "#003b46";
-        indexs[i].style.backgroundColor = "#5bc8ac";
-        indexs[i].style.color = "#003b46";
+        blocks[i].style.backgroundColor = "#000000";
+        indexs[i].style.backgroundColor = "#00FFFF";
+        indexs[i].style.color = "#000000";
     }
     arr = linearSort(arr);
     for (let i = 0; i < blocks.length; i++) {
@@ -465,3 +465,7 @@ window.onload = () => {
     setCards(x);
     x.addListener(setCards);
 };
+
+function support() {
+    alert("Thank u bhai ❤️❤️");
+}

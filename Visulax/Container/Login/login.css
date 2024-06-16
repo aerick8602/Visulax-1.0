@@ -29,10 +29,11 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .container {
-    background-color: #00FFFF;
+    background-color: transparent;
     /* border-radius: 30px; */
     position: relative;
     overflow: hidden;
@@ -179,7 +180,7 @@ body {
 }
 
 .toggle {
-    background-color: #000000;
+    background-color: transparent;
     height: 100%;
     color: #00FFFF;
     position: relative;
@@ -228,4 +229,48 @@ body {
 
 .container.active .toggle-right {
     transform: translateX(200%);
+}
+
+@media(max-width:750px) {
+    .container h1 {
+        width: 200px;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .social-icons {
+        display: flex;
+    }
+
+    .form-container>form>span,
+    .form-container>form>input,
+    .form-container>form>button {
+        width: 160px;
+        text-align: center;
+        font-size: x-small;
+    }
+
+    .form-container>form>a {
+        width: 200px;
+        text-align: center;
+        font-size: small;
+    }
+
+    .toggle>div>button {
+        width: 160px;
+        text-align: center;
+        font-size: x-small;
+        margin-top: 64px;
+    }
+
+    .toggle-panel>p {
+        width: 150px;
+        font-size: small;
+    }
+
+    .sign-up>form>input {
+        height: 25px;
+
+    }
+
 }

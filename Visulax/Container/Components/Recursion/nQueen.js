@@ -83,7 +83,6 @@ function makeTable(n) {
 
     const tbl = document.createElement("table");
     tbl.setAttribute("id", "chess-board");
-
     // create a <tbody> element
     const tblBody = document.createElement("tbody");
 
@@ -99,7 +98,6 @@ function makeTable(n) {
             const cell = document.createElement("td");
 
             cell.setAttribute("id", "row-" + (i + 1) + "-col-" + (j + 1));
-
 
             row.appendChild(cell);
         }

@@ -210,6 +210,7 @@ class SieveOfEratosthenes {
 // input element
 const inputElement = document.getElementById('myInput');
 const inputButton = document.getElementById('myButton');
+
 function createMatrix(number) {
 
     // Calculate the square root of the number
@@ -262,6 +263,7 @@ function createMatrix(number) {
 let gridSystem = new SieveOfEratosthenes(createMatrix(100), 100);
 
 function checkInput(userInput) {
+    document.getElementById('footer').style.position = 'fixed';
     // Cancel the default action, if needed
     if (gridSystem.checkIfRunning()) {
         alert('Already running, please wait!');
@@ -283,6 +285,14 @@ function checkInput(userInput) {
             alert('Please enter a whole number!');
             return;
         }
+        if (inputValue > 101 && window.innerWidth >= 395) {
+            document.getElementById('footer').style.position = 'relative';
+        }
+        else if (inputValue > 120) {
+            document.getElementById('footer').style.position = 'relative';
+        }
+
+
 
         let CAP = inputValue;
 
@@ -300,5 +310,6 @@ function checkInput(userInput) {
     }
 }
 
-
-
+function support() {
+    alert("Thank u bhai ❤️❤️");
+}

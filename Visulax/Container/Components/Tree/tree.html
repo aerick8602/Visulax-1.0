@@ -7,24 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tree</title>
     <link rel="stylesheet" href="../../style/tree.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- Main container for the entire content -->
     <div class="main-container">
-        <!-- Navigation bar -->
-        <nav class="navbar">
-            <div>
-                <img class="logo" src="../../../images/logo.png" alt="">
+        <nav>
+            <div class="left-nav">
+                <a href="../../../index.html"><img class="logo" src="../../../images/main-logo.png" alt=""></a>
             </div>
             <div class="right-nav">
-                <div class="signIn">
-                    <a class="sign" href="../../../Login/login.html" onclick="handleLinkClick(event)">Login</a>
+                <div class="SignIn">
+                    <a href="../../Login/login.html" onclick="handleLinkClick(event)">SignIn</a>
                 </div>
-                <a href="https://github.com/aerick8602" target="_blank" class="github-corner"
+                <a class="github" href="https://github.com/aerick8602" target="_blank" class="github-corner"
                     aria-label="View source on GitHub">
-                    <img class="Git" src="../../../images/git.svg" alt="">
-
+                    <img class="gitsvg" src="../../../images/git.svg" alt="">
                 </a>
             </div>
         </nav>
@@ -61,23 +59,23 @@
                             <div class="code">
                                 <h2 style="text-align: center; margin: 0; padding: 0; margin-top: 3px;">C++ Code</h2>
                                 <pre style="margin: 0;"><code>
-                    // Pre-order traversal (root, left, right)
-                    void preOrderTraversal(Node* root) {
-                      if (root == nullptr) {
-                        return;  // Base case: If the root is null, we've reached the end of a branch and can return.
-                      }
-                    
-                      std::cout << root->data << " ";  // Visit the root node first: Print the data.
+// Pre-order traversal (root, left, right)
+void preOrderTraversal(Node* root) {
+  if (root == nullptr) {
+    return;  // Base case: If the root is null, we've reached the end of a branch and can return.
+  }
 
-                      preOrderTraversal(root->left);   // Visit the left subtree.
+  std::cout << root->data << " ";  // Visit the root node first: Print the data.
 
-                      preOrderTraversal(root->right);  // Visit the right subtree.
-                    }
+  preOrderTraversal(root->left);   // Visit the left subtree.
+
+  preOrderTraversal(root->right);  // Visit the right subtree.
+}
           </code></pre>
                             </div>
                         </div>
                         <div class="complexity">
-                            <img style="width: 85%;" src="../../../images/tree.png" alt="">
+                            <img style="width: 100%;" src="../../../images/tree.png" alt="">
                             <p>&nbsp; PreOrder : 9 2 0 5 12 11 16 </p>
                         </div>
                     </div>
@@ -97,23 +95,22 @@
                             <div class="code">
                                 <h2 style="text-align: center; margin: 0; padding: 0; margin-top: 3px;">C++ Code</h2>
                                 <pre style="margin: 0;"><code>
-                    // In-order traversal (left, root, right)
-                    void inOrderTraversal(Node* root) {
-                      if (root == nullptr) {
-                        return;  // Base case: If the root is null, we've reached the end of a branch and can return.
-                      }
-                    
-                      inOrderTraversal(root->left);  // Visit the left subtree first.
+// In-order traversal (left, root, right)
+void inOrderTraversal(Node* root) {
+  if (root == nullptr) {
+    return;  // Base case: If the root is null, we've reached the end of a branch and can return.
 
-                      std::cout << root->data << " ";  // Visit the root node: Print the data.
+  inOrderTraversal(root->left);    // Visit the left subtree first.
 
-                      inOrderTraversal(root->right); // Visit the right subtree after the root.
-                    }
+  std::cout << root->data << " ";  // Visit the root node: Print the data
+  
+  inOrderTraversal(root->right);   // Visit the right subtree after the root.
+}
           </code></pre>
                             </div>
                         </div>
                         <div class="complexity">
-                            <img style="width: 85%;" src="../../../images/tree.png" alt="">
+                            <img style="width: 100%;" src="../../../images/tree.png" alt="">
                             <p>&nbsp; InOrder : 0 2 5 9 11 12 16</p>
                         </div>
                     </div>
@@ -133,43 +130,60 @@
                             <div class="code">
                                 <h2 style="text-align: center; margin: 0; padding: 0; margin-top: 3px;">C++ Code</h2>
                                 <pre style="margin: 0;"><code>
-                    // Post-order traversal (left, right, root)
-                    void postOrderTraversal(Node* root) {
-                        if (root == nullptr) {
-                          return;  // Base case: If the root is null, we've reached the end of a branch and can return.
-                        }
+// Post-order traversal (left, right, root)
+void postOrderTraversal(Node* root) {
+    if (root == nullptr) {
+      return;  // Base case: If the root is null, we've reached the end of a branch and can return.
+    }
                       
-                        postOrderTraversal(root->left);   // Visit the left subtree.
+    postOrderTraversal(root->left);   // Visit the left subtree.
 
-                        postOrderTraversal(root->right);  // Visit the right subtree.
+    postOrderTraversal(root->right);  // Visit the right subtree.
 
-                        std::cout << root->data << " ";  // Visit the root node: Print the data after visiting children.
-                      }
+    std::cout << root->data << " ";  // Visit the root node: Print the data after visiting children.
+  }
           </code></pre>
                             </div>
                         </div>
                         <div class="complexity">
-                            <img style="width: 85%;" src="../../../images/tree.png" alt="">
-                            <p>&nbsp; PostOrder : 0 5 2 11 16 12 9 </p>
+                            <img style="width: 100%;" src="../../../images/tree.png" alt="">
+                            <p>PostOrder : 0 5 2 11 16 12 9 </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer class="footer">
-                <div class="Intro">
-                    <p>
-                        Welcome to Algorithm Visualizer, an immersive platform that transforms algorithms into vivid,
-                        interactive visualizations.
-                    </p>
-                    <p>
-                        Dive into the dynamic world of Tree, Sorting, and Graph algorithms and see them come to life!
-                    </p>
+            <footer id="footer">
+                <h3>
+                    Welcome to Algorithm Visualizer, an immersive platform that transforms algorithms into vivid,
+                    interactive visualizations.
+                </h3>
+                <div class="footer-middle">
+                    <div class="Contact">
+                        <h3>Contact Us</h3>
+                        <p>Phone:(+91) 456-7890</p>
+                        <p>Email:visulax@gmail.com</p>
+                    </div>
+                    <div class="Follow">
+                        <h3>Follow Us</h3>
+                        <div class="fa">
+                            <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                            <a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://Whastapp.com" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="Support">
+                        <h3>Support Us</h3>
+                        <form action="/support" method="post">
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                            <button onclick="support()" class="Subscribe">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <p>Developed by <b>Ayush Katiyar's</b> insight, ChatGPT's verbal might - forging ahead in digital
-                        flight!😁✨</p>
-                    <p>Powered by <b>VISULAX</b></p>
-                </div>
+                <p>Developed by <b>Ayush Katiyar's</b> insight, ChatGPT's verbal might - forging ahead in digital
+                    flight!😁✨
+                </p>
+                <br>
             </footer>
             <!-- JavaScript files -->
             <script src="Js/tree.js"></script>

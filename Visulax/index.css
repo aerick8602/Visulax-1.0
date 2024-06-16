@@ -7,6 +7,8 @@ body {
     height: auto;
     transition: opacity 0.5s ease;
     background-color: #1f1c1cef;
+    overflow-y: scroll;
+
 }
 
 #particles-js {
@@ -115,7 +117,7 @@ nav {
 }
 
 .Components {
-    font-size: 20px;
+    font-size: 22px;
     color: #00FFFF;
     padding: 5px 10px 5px 10px;
     border-radius: 25px;
@@ -134,15 +136,15 @@ nav {
 }
 
 .box {
-    margin: 2%;
+    margin: 2.22%;
     background-color: #00FFFF;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 290px;
-    height: 200px;
+    width: 307px;
+    height: 205px;
     border-radius: 20px;
     box-shadow: 2px 3px 4px #15b0a3c5, -2px -3px 4px #15b0a3c5;
     text-align: center;
@@ -150,6 +152,7 @@ nav {
 }
 
 .algorithms {
+    height: 27%;
     padding: 2px 4px 2px 4px;
     display: flex;
     flex-wrap: wrap;
@@ -163,7 +166,7 @@ nav {
 
 .box>div>label {
     padding: 2px 5px 4px 5px;
-    font-size: 13px;
+    font-size: 16.5px;
     color: #8f8787;
     white-space: nowrap;
 
@@ -224,10 +227,11 @@ footer {
 }
 
 h3 {
+    font-weight: 600;
     margin: 3px;
     color: #00FFFF;
     font-family: 'Inconsolata', monospace;
-    font-size: medium;
+    font-size: large;
     text-align: center;
 }
 
@@ -235,7 +239,7 @@ p {
     margin: 1px;
     color: #00FFFF;
     font-family: 'Inconsolata', monospace;
-    font-size: small;
+    font-size: medium;
     text-align: center;
 }
 
@@ -254,7 +258,7 @@ p {
 }
 
 .icon>img {
-    width: 8%;
+    width: 10%;
     padding: 3px;
 }
 
@@ -278,7 +282,7 @@ p {
 
 .fa>a {
     color: #00FFFF;
-    font-size: 120%;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -288,12 +292,13 @@ p {
 }
 
 .Support>form>input {
+    font-size: 15px;
     width: 60%;
     border-radius: 5px;
 }
 
 .Support>form>button {
-    font-size: 80%;
+    font-size: 15px;
     width: 30%;
     background-color: #00FFFF;
     color: black;
@@ -309,6 +314,8 @@ p {
 /* Media Queries */
 
 @media (max-width: 1360px) {
+
+
     .wrappers {
         flex-direction: row;
         justify-content: center;
@@ -317,12 +324,32 @@ p {
 
 @media (max-width: 1200px) {
 
+
     .logo {
         width: 140%;
     }
 }
 
 @media (max-width: 1150px) {
+
+
+    .left-nav {
+        width: 60%;
+    }
+
+    .right-nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .SignIn>a {
+        font-size: medium;
+    }
 
     .wallpaper {
         margin-top: 8%;
@@ -350,38 +377,75 @@ p {
 }
 
 @media (max-width: 760px) {
+    .left-nav {
+        width: 60%;
+    }
 
-    .left-nav,
     .right-nav {
-        width: 100%;
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .SignIn>a {
+        font-size: medium;
+    }
+
+    .wallpaper {
+        margin-top: 10%;
+    }
+
+    .box {
+        width: 190px;
+        height: 160px;
+        margin: 18px;
+
+    }
+
+    .box>a {
+        font-size: 16px;
+        padding: 1px 4px 1px 4px;
+        font-weight: 800;
+
+    }
+
+    .algorithms {
+        height: 10px;
+    }
+
+    .box>div>label {
+        padding: .05px 1px .05px 1px;
+        font-size: 12px;
+        color: #484242;
+        white-space: nowrap;
+
     }
 
     h3 {
-        font-size: small;
+        font-size: 16px;
+        font-weight: 800;
     }
 
     p {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .icon {
         margin: 0% 30% 0% 30%;
     }
 
-    .logo {
-        width: 80%;
-    }
 
-    .github>img {
-        width: 40px;
-    }
 
     .fa {
-        gap: 10%;
+        gap: 5%;
     }
 
     .fa>a {
-        font-size: small;
+        font-size: xx-larger;
     }
 
     form {
@@ -389,31 +453,71 @@ p {
         flex-direction: row;
     }
 
-    .Support>form>input {
-        width: 60%;
-        font-size: 30%;
-    }
-
-    .Support>form>button {
-        font-size: 30%;
-        width: 50%;
-        background-color: #00FFFF;
-        color: black;
-        border-radius: 5px;
-    }
 
     .footer-middle {
         height: 35px;
     }
+
+    .fa>a {
+        font-size: large;
+    }
+
+    .footer-middle>div {
+        width: 30%;
+
+    }
+
+    .footer-middle {
+
+        margin: 0%;
+        margin-bottom: 2%;
+    }
+
+    .Support>form {
+
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Support>form>input {
+        margin: 0% 6% 0% 0%;
+        width: 50%;
+        font-size: 13px;
+    }
+
+    .Support>form>button {
+        width: 40%;
+        font-size: 13px;
+    }
 }
 
-@media (max-width: 690px) {
+@media (max-width:395px) {
+
+    .left-nav {
+        width: 100%;
+    }
+
+    .logo {
+        margin-top: 1.45%;
+        width: 68%;
+    }
+
+    .right-nav {
+        width: 60%;
+        padding: 0%;
+    }
+
+    .SignIn>a {
+        font-size: small;
+    }
+
     .wallpaper {
-        margin-top: 13%;
+        margin-top: 14%;
     }
 
     .wallpaper>img {
-        width: 90%;
+        width: 100%;
     }
 
     .wrappers {
@@ -422,43 +526,74 @@ p {
     }
 
     .box {
-        width: 160px;
+        width: 150px;
         height: 130px;
+        margin: 18px;
 
     }
 
     .box>a {
-        font-size: 10px;
-        padding: 1px 3px 1px 3px;
-        font-weight: 900;
+        font-size: 12.8px;
+        padding: 1px 4px 1px 4px;
+        font-weight: 800;
 
+    }
+
+    .algorithms {
+        height: 10px;
     }
 
     .box>div>label {
         padding: .05px 1px .05px 1px;
-        font-size: 8px;
-        color: #8f8787;
+        font-size: 10px;
+        color: #484242;
         white-space: nowrap;
 
     }
 
+
     .footer-middle>div {
         width: 30%;
+
     }
 
     .footer-middle {
-        margin-bottom: 1%;
+
+        margin: 0%;
+        margin-bottom: 2%;
     }
 
-    h3 {
-        font-size: x-small;
+    .fa>a {
+        font-size: large;
     }
 
-    p {
+    .Support>form {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Support>form>input {
+        margin: 0% 6% 0% 0%;
+        width: 50%;
         font-size: 8px;
     }
 
-    .footer-middle {
-        margin-bottom: 2%;
+    .Support>form>button {
+        width: 40%;
+        font-size: 8px;
     }
+
+    h3 {
+        font-weight: 700;
+        font-size: 12px;
+        padding: 0%;
+        margin: 1% 0% .2% 0%;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
 }

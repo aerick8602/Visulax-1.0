@@ -21,3 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nQueenLink.classList.remove("active");
     });
 });
+function support() {
+    alert("Thank u bhai ❤️❤️");
+}
+
