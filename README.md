@@ -1,6 +1,7 @@
 # Visulax
 
 Welcome to Visulax - an immersive platform for Algorithm Visualization!
+
 ![Visulax](./Visulax/images/demo/Screenshot%202024-06-16%20093936.png)
 
 ## Description
@@ -17,18 +18,23 @@ Visulax transforms complex algorithms into vivid, interactive visualizations, pr
 ## Features
 
 - **Sorting Algorithms:** Bubble Sort, Selection Sort, Heap Sort, Insertion Sort, Merge Sort, Quick Sort.
+- 
 ![](./Visulax/images/demo/Screenshot%202024-06-16%20093936.png)
 
 - **Searching Algorithms:** Linear Search, Binary Search, Jump Search, Exponential Search.
+- 
 ![](./Visulax/images/demo/Screenshot%202024-06-16%20093328.png)
 
 - **Tree Algorithms:** Binary Tree.
+- 
 ![](./Visulax/images/demo/Screenshot%202024-06-16%20093538.png)
 
 - **Sieve of Eratosthenes:** Prime Harvesting Algorithm.
+- 
 ![](./Visulax/images/demo/Screenshot%202024-06-16%20093131.png)
 
 - **Recursion Algorithms:** N Queen, Rat in a Maze.
+- 
 ![](./Visulax/images/demo/Screenshot%202024-06-16%20093358.png)
 
 - **Graph Algorithms:** Depth First Search (DFS), Breadth First Search (BFS).
