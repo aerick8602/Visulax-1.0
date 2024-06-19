@@ -4,6 +4,9 @@ Welcome to Visulax - an immersive platform for Algorithm Visualization!
 ### Live: https://visulax.netlify.app
 ![Visulax](./Visulax/images/demo/Screenshot%202024-06-16%20093936.png)
 
+## New!!✨
+### Check out Visulax 2.0 with enhanced features, including user authentication! ![Click here to explore Visulax 2.0 🚀](https://visulax2.netlify.app)
+
 ## Description
 
 Visulax transforms complex algorithms into vivid, interactive visualizations, providing an engaging learning experience. Dive into the dynamic world of Tree, Sorting, Graph algorithms, and more!
