@@ -5,7 +5,7 @@ Welcome to Visulax - an immersive platform for Algorithm Visualization!
 ![Visulax](./Visulax/images/demo/Screenshot%202024-06-16%20093936.png)
 
 ### New!!✨
-#### Check out Visulax 2.0 with enhanced features, including user authentication  [Click here to explore Visulax 2.0 🚀](https://visulax2.netlify.app)
+#### Check out Visulax 2.0 with enhanced features, including user authentication  [Click here to explore Visulax 2.0 🚀](https://github.com/aerick8602/Visulax_2.0))
 
 ## Description
 
